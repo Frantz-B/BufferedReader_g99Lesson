@@ -37,3 +37,14 @@ public class FileReaderExample{
 //			java.io.FileNotFoundException: c:\Dat1.txt (The system cannot find the file specified)
 
 /*  This output was generate via eclipse while original code was done via command line.  */
+
+/*	Using the printStackTrace() gave this output when file not found:
+
+		java.io.FileNotFoundException: c:\Dat1.txt (The system cannot find the file specified)
+				at java.io.FileInputStream.open0(Native Method)
+				at java.io.FileInputStream.open(Unknown Source)
+				at java.io.FileInputStream.<init>(Unknown Source)
+				at java.io.FileInputStream.<init>(Unknown Source)
+				at java.io.FileReader.<init>(Unknown Source)
+				at FileReaderExample.main(FileReaderExample.java:12)
+*/
