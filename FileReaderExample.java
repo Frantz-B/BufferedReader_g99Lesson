@@ -9,15 +9,15 @@ public class FileReaderExample{
 		//seem like this is the proper flow to initialize
 		try{
 			String strCurrentLine; //felt like renaming this to set
-			fileOjbReader = new BufferedReader(new FileReader("c:\\Dat1.txt"));
+			fileOjbReader = new BufferedReader(new FileReader("c:\\Data1.txt"));
 			//first time I used the new Keyword twice in this fashion
 
-			while((strCurrentLine = fileOjbReader.readline()) != null){
+			while((strCurrentLine = fileOjbReader.readLine()) != null){
 				System.out.println(strCurrentLine);
 			}
 		}
 		catch (IOException e){
-			e.printStactTrace();
+			e.printStackTrace();
 			//First time usage of this, look up later
 		}
 		finally{
@@ -26,7 +26,7 @@ public class FileReaderExample{
 					fileOjbReader.close();
 			}
 			catch (IOException ex){
-				ex.printStactTrace();
+				ex.printStackTrace();
 			}
 		}
 	}
