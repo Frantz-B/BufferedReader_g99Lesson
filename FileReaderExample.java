@@ -31,3 +31,9 @@ public class FileReaderExample{
 		}
 	}
 }
+
+//if I change the printStackTrace() to println(), my output will be as followed:
+//
+//			java.io.FileNotFoundException: c:\Dat1.txt (The system cannot find the file specified)
+
+/*  This output was generate via eclipse while original code was done via command line.  */
